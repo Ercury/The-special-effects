@@ -22,7 +22,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    border-size: cover;
+    background-size: cover;
     display: grid;
     height: 100vh;
     place-items: center;
@@ -30,7 +30,7 @@ body {
 
 .form_title {
     font-weight: 300;
-    margin:0;
+    margin: 0;
     margin-bottom: 1.25rem;
 }
 
@@ -47,7 +47,7 @@ body {
     box-shadow: 0 0.9rem 1.7rem rgba(0,0,0,0.25);
     height: var(--max-height);
     max-width: var(--max-width);
-    ovarflow: hidden;
+    overflow: hidden;
     position: relative;
     width: 100%;
 }
@@ -64,6 +64,7 @@ body {
     width: 50%;
     z-index: 2;
 }
+
 
 .container.right-panel-active .container_signin {
     transform: translateX(100%);
@@ -95,12 +96,12 @@ body {
 }
 
 .container.right-panel-active .container_overlay {
-    tansform: tanslateX(-100%);
+    transform: tanslateX(-100%);
 }
 
 .overlay{
-    /* background-color: var(--lightblue); */
-    /* background: linear-gradient(#e66465, #9198e5) */
+    background-color: var(--lightblue);
+    background: url(./resources/03.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -109,18 +110,18 @@ body {
     left: -100%;
     position: relative;
     transform: translateX(0);
-    tansition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
     width: 200%;
 }
 
 .container.right-panel-active .overlay {
-    tansform: translateX(50%);
+    transform: translateX(50%);
 }
 
 .overlay_panel {
     align-items: center;
     display: flex;
-    flex-dircetion: column;
+    flex-direction: column;
     height: 100%;
     justify-content: center;
     position: absolute;
@@ -149,22 +150,22 @@ body {
 }
 
 .btn {
-    backgound-color: var(--blue);
-    background-image: linear-gradient(90deg,var(--blue) 0%, var(--lightblue) 74%)
+    background-color: var(--blue);
+    background-image: linear-gradient(90deg,var(--blue) 0%, var(--lightblue) 74%);
     border-radius: 20px;
     border: 1px solid var(--blue);
     color: var(--white);
     cursor: pointer;
     font-size: 0.8rem;
-    font-weight: blod;
+    font-weight: bold;
     letter-spacing: 0.1rem;
-    padding: 0.9rem 4rem
-    text-tansform: uppercase;
+    padding: 0.9rem 4rem;
+    text-transform: uppercase;
     transition: tansform 80ms ease-in;
 }
 
 .form > .btn {
-    margin-top 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .btn:active {
@@ -181,7 +182,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 3rem;
+    padding: 0 6rem;
     height: 100%;
     text-align: center;
 }
