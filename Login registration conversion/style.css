@@ -141,7 +141,7 @@ body {
 
 .overlay_right {
     right: 0;
-    transform: tanslateX(0);
+    transform: translateX(0);
 }
 
 .container.right-panel-active .overlay_right {
